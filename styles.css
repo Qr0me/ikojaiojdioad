@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    background-color: #1c1719;
+    font-family: Quicksand;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    height: 3.5rem;
+    background-color: #ac396d;
+}
+
+.headerNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 3.5rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+.headerNav a{
+    color: #e6e6e6;
+}
+
+.headerNav a:hover{
+    color: #ffffff;
+}
+
+.active{
+    color: #ffffff;
+    border-bottom: 3px solid white;
+    border-radius: 0 0 5px 5px
+}
+
+img{
+    height: 3.5rem;
+}
+
+.mySlides {
+    display: none
+}
+
+.map-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50rem;
+    width: 100%;
+}
+
+.map{
+    width: 20rem;
+    height: 30rem;
+    border: 5px solid #3d2932;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px #000000;
+}
+
+.map h1{
+    color: white;
+    height: 3rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 13rem;
+    transition: 0.3s;
+    text-shadow: 3px 3px 4px rgba(0,0,0,0.48);
+}
+
+.overlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    height: 60%;
+    width: 100%;
+    transition:0.3s;
+    transform: translateY(30rem);
+    backdrop-filter: blur(20px);
+    box-shadow: -1px -7px 15px -3px rgba(0,0,0,0.32);
+}
+
+.overlay h3{
+    font-weight: 300;
+    color: white;
+}
+
+.outer:hover, .inner:hover{
+    filter: brightness(150%);
+}
+
+.map:hover h1{
+    margin-top: 2rem;
+}
+
+.map:hover .overlay{
+    transform: translateY(6rem)
+}
+
+.map:hover{
+    cursor: pointer;
+}
+
+.diffs{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+}
+
+.outer  {
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
+.inner {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 30px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .activee, .dot:hover {
+    background-color: #ff66ab;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+
+/*   ------------------BACKGROUND----------------- */
+
+#any{
+    background-image: url(https://i.ytimg.com/vi/G1iWc9jbYlY/maxresdefault.jpg);
+}
+
+#kzn{
+    background-image: url(https://i1.sndcdn.com/artworks-mayHrp5pkzOTb8bi-5LKELg-t500x500.jpg);
+}
+
+#mik{
+    background-image: url(https://i1.sndcdn.com/artworks-7ZRoMBSIVAt7vzuQ-HNtOag-t500x500.jpg);
+}
+
+#sd{
+    background-image: url(https://i.ytimg.com/vi/7FipcWzpN70/maxresdefault.jpg)
+}
+
+#ts{
+    background-image: url(https://i.ytimg.com/vi/qbJKHXbo1a0/maxresdefault.jpg)
+}
+
+#gd{
+    background-image: url(https://i.ytimg.com/vi/eOSW95OsiaY/maxresdefault.jpg)
+}
+
+#ccg{
+    background-image: url(https://i.ytimg.com/vi/mc9BJ7Ryue0/maxresdefault.jpg)
+}
+
+#obo{
+    background-image: url(https://i.ytimg.com/vi/DNwbS9RUCjc/maxresdefault.jpg)
+}
+
+#hkr{
+    background-image: url(https://i.ytimg.com/vi/-cUh_YQ6GLU/maxresdefault.jpg)
+}
+
+/*   ------------------RESPONSIVE----------------- */
+
+@media only screen and (max-width: 1024px){
+    a{
+        font-size: 0.7rem;
+    }
+    .map-container{
+        gap: 2rem;
+    }
+}
